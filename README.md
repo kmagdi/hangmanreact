@@ -5,5 +5,5 @@
 - read data from MySQL database with AXIOS
 - Reactstrap for UI
 - deploying React on Vercel
-- using MySQL database on cloud: Infinityfree
-- deploying server side (PHP) on Infinityfree
+- using MySQL database on cloud: Heroku
+- deploying server side (PHP) on Heroku
