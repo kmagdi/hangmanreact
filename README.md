@@ -7,3 +7,4 @@
 - deploying React on Vercel
 - using MySQL database on cloud: Heroku
 - deploying server side (PHP) on Heroku
+- [Hangman](https://hangmanreact.vercel.app/)
