@@ -10,7 +10,7 @@ import {Letters} from './components/Letters'
 import {Word} from './components/Word'
 import {MyModal} from './components/MyModal'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { NewGame } from './components/NewGame';
+
 
 function App() {
   const [wrongLetters,setWrongLetters] =useState([])
@@ -53,11 +53,11 @@ function App() {
 //console.log('correct:',correctLetters)
   return (
     <div className="content">
-      <h3 className="m-4">Hangman</h3>
-      <Figure wrongLetters={wrongLetters}/>
-      <Word word={word} correctLetters={correctLetters} />
+        <h3 className="m-4">Hangman</h3>
+        <Figure wrongLetters={wrongLetters}/>
+        <Word word={word} correctLetters={correctLetters} />
         <Letters word={word} setCorrectLetters={setCorrectLetters} setWrongLetters={setWrongLetters}/>
-        <NewGame setGameOver={setGameOver}/>
+        <div className="btn btn-secondary" onClick={()=>setGameOver(true)}>New Game</div>
         <MyModal word={word} modal={modal} setModal={setModal} msg={msg}/>
     </div>
   );
